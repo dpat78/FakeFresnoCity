@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Fake Fresno City</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+
+            body, html{
+                height: 100%;
+            }
+
+                .main-header{
+                height: 110px;
+                background-image: url('./image/header.jpg');
+                background-repeat: no-repeat;
+            }
+
+            .main-header ul{
+                list-style-type: none;
+                width: 100%;
+                text-align: center;
+
+            }
+            
+            .main-header li{
+                display: inline;
+                
+            }
+
+            .main-header a{
+                padding: 10px 5px;
+                color: white;
+                text-decoration: none;
+            }
+
+            .main-header a:hover{
+                text-decoration: underline;
+            }
+
+            .main-header, .main-footer{
+                background-color: #CCC;
+                width: 100%;
+
+            }
+            
+        
+            .container{
+               
+                max-width: 880px;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                position: relative;
+                width: 80%;
+            }
+
+            .main-content{
+                flex: 1;
+                background-color: #CC0000;
+                margin-bottom: 100px;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+
+            }
+
+            .main-sidebar{
+              
+                width: 30%;
+                float: left;
+                flex: 1;
+                
+            }
+
+            .content-right{
+                background-color: forestgreen;
+                width: 70%;
+                position: absolute;
+                left: 30%;
+                flex: 1;
+                height: 200px;
+
+            }
+
+            nav.main-nav ul{
+                list-style-type: none;
+
+            }
+
+            nav.main-nav li{
+                display: inline;
+                text-align: center;
+                width: 11%;
+            }
+
+            nav.main-nav a{
+                padding: 10px 10px;
+                font-weight: bold;
+                text-transform: uppercase;
+                font-family: Verdana, Arial, Sans-Serif;
+                font-size: 11px;
+                line-height: 16px;
+                color: white;
+                text-decoration: none;
+            }
+
+            nav.main-nav a:hover{
+                background-color:#e44c4c;
+            }
+
+            .gallery{
+                background-repeat: no-repeat;
+                height: 300px;
+                background-image: url('./image/3.jpg')
+                
+            }
+
+            .main-sidebar ul{
+                list-style-type: none;
+            }
+
+            .main-sidebar li{
+
+            }
+
+            .main-sidebar a{
+                color: white;
+                text-decoration: none;
+                display: block;
+                padding:0px 0 5px 50px;
+            }
+
+            .sidebar-gradient{
+                background: rgba(248,80,50,1);
+                background: -moz-linear-gradient(top, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 20%, rgba(246,41,12,1) 78%, rgba(240,47,23,1) 85%, rgba(231,56,39,1) 100%);
+                background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(248,80,50,1)), color-stop(20%, rgba(241,111,92,1)), color-stop(78%, rgba(246,41,12,1)), color-stop(85%, rgba(240,47,23,1)), color-stop(100%, rgba(231,56,39,1)));
+                background: -webkit-linear-gradient(top, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 20%, rgba(246,41,12,1) 78%, rgba(240,47,23,1) 85%, rgba(231,56,39,1) 100%);
+                background: -o-linear-gradient(top, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 20%, rgba(246,41,12,1) 78%, rgba(240,47,23,1) 85%, rgba(231,56,39,1) 100%);
+                background: -ms-linear-gradient(top, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 20%, rgba(246,41,12,1) 78%, rgba(240,47,23,1) 85%, rgba(231,56,39,1) 100%);
+                background: linear-gradient(to bottom, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 20%, rgba(246,41,12,1) 78%, rgba(240,47,23,1) 85%, rgba(231,56,39,1) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827', GradientType=0 );
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header class="main-header">
+                <ul>
+                    <li><a href="https://login.microsoftonline.com/login.srf?wa=wsignin1.0&rpsnv=4&ct=1488496140&rver=6.7.6640.0&wp=MBI_SSL&wreply=https%3a%2f%2foutlook.office365.com%2fowa%2f&id=260563&CBCXT=out&msafed=0">Student Email</a></li>
+                    <li><a href="https://mail1.scccd.edu/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2fmail1.scccd.edu%2fowa%2f">Employee Email</a></li>
+                    <li><a href="http://www.fresnocitycollege.edu/index.aspx?page=562">FAQ</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="#">Calender</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">District Police</a></li>
+                </ul>
+            </header>
+
+            <div class="main-content">
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#">home</a></li>
+                        <li><a href="http://www.fresnocitycollege.edu/index.aspx?page=2">about Us</a></li>
+                        <li><a href="http://www.fresnocitycollege.edu/index.aspx?page=3">getting started</a></li>
+                        <li><a href="http://www.fresnocitycollege.edu/index.aspx?page=4">for students</a></li>
+                        <li><a href="http://www.fresnocitycollege.edu/index.aspx?page=5">courses &amp; programs</a></li>
+                        <li><a href="http://www.fresnocitycollege.edu/index.aspx?page=6">online learning</a></li>
+                        <li><a href="http://www.fresnocitycollege.edu/index.aspx?page=7">faculty &amp; staff</a></li>
+                    </ul>
+                </nav>
+                <div class="gallery">
+
+                </div>
+                <aside class="main-sidebar">
+                    <ul class="side-nav">
+                        <li class="sidebar-gradient"><a href="#">Apply Online</li>
+                        <li class="sidebar-gradient"><a href="#">Campus Events</li>
+                        <li class="sidebar-gradient"><a href="#">Library</li>
+                        <li class="sidebar-gradient"><a href="#">Paying for College</li>
+                        <li class="sidebar-gradient"><a href="#">Online Services</li>
+                        <li class="sidebar-gradient"><a href="#">Athletics</li>
+                        <li class="sidebar-gradient"><a href="#">My FCC</li>
+                        <li class="sidebar-gradient"><a href="#">WebAdvisor</li>
+                    </ul>
+                </aside>
+                <div class="content-right">
+                    content right
+                </div>
+            </div>
+
+            <footer class="main-footer">(c) created by David Patterson</footer>
+        </div>
+    </body>
+    <footer>
+
+
+    </footer>
+</html>
