@@ -1,0 +1,155 @@
+/***HTML Drop Down Menu****/
+div#dropdownmenu
+{
+	width: 900px;  /*set width of menu */
+	/*margin-left: 18px;*/
+	padding: 0;
+	border:0;
+	height: 24px;
+	display:block;
+}
+
+#dropdownmenu ul 
+{ /* remove bullets and list indents */
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+	border:0;
+	float:left;
+}
+
+a.dropdownitemlevel1, 
+a.dropdownitemhaschildlevel1, 
+a.dropdownitemlevel2
+{
+	display: block;
+	/*border:1px solid #fff;*/
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	margin: 0;
+	padding: 2px 4px;
+	width:15em;
+	font-family: Tahoma, Arial, san-serif;
+	font-size: 10px;
+	color:#fff;
+	cursor: pointer;
+	line-height: 14px !important;
+	background-color: #000;
+	/*background: url(_gfx/nav/dropdown_bg.gif) top center;*/
+	text-decoration:none;
+}
+
+a.dropdownitemlevel1, 
+a.dropdownitemhaschildlevel1, 
+a.dropdownitemlevel2
+{
+	/*background-color:#224d83;*/
+	/*border-top: solid 1px #fff;*/
+	border-bottom: solid 1px #fff;
+}
+
+a:hover.dropdownitemlevel1, 
+a:hover.dropdownitemhaschildlevel1, 
+a:hover.dropdownitemlevel2
+{
+	background: #CC0000;
+	/*border-top: solid 1px #fff;*/
+	border-bottom: solid 1px #fff;
+	text-decoration:none;
+}
+
+a.dropdownitemhaschildlevel1
+{
+	background-image:url(_gfx/nav/arrow_right_dropdown.gif);
+	background-position:center right;
+	background-repeat:no-repeat;
+}
+
+#dropdownmenu li {
+	/* make the list elements a containing block for the nested lists */
+	position: relative;
+	/*z-index:400; -- need a smaller value so that the administrative toolbox could stay on top*/
+	z-index:20;/*IE7 fix if home collage is present*/
+} 
+
+#dropdownmenu ul ul
+{
+	position: absolute;
+	z-index: 500;
+	width:15em;
+}
+
+#dropdownmenu ul ul ul {
+	position: absolute; 
+	top: 30%;
+	left: 90%; /*to position them to the right of their containing block */
+	width:15em;
+	z-index:400;/*IE7 fix if home collage is present*/
+}
+
+
+
+/*Determine hide/show behavior of sub-menus*/
+div#dropdownmenu ul ul,
+div#dropdownmenu ul li:hover ul ul,
+div#dropdownmenu ul ul li:hover ul ul,
+div#dropdownmenu ul li.over ul ul,
+div#dropdownmenu ul ul li.over ul ul
+{
+	display: none;
+}
+
+div#dropdownmenu ul li:hover ul,
+div#dropdownmenu ul ul li:hover ul,
+div#dropdownmenu ul ul ul li:hover ul,
+div#dropdownmenu ul li.over ul,
+div#dropdownmenu ul ul li.over ul,
+div#dropdownmenu ul ul ul li.over ul
+{
+	display: block;
+}
+/*Determine hide/show behavior of sub-menus*/
+
+
+
+/* For IE7 and Safari Fix of hide/show behavior z-index problem */
+#dropdownmenu ul li ul li:hover,
+#dropdownmenu ul li ul li.over,
+#dropdownmenu ul li ul li:hover a, 
+#dropdownmenu ul li ul li.over a
+{
+	position: relative;
+	z-index: 600;
+}
+
+#dropdownmenu ul li ul li:hover ul,
+#dropdownmenu ul li ul li.over ul,
+#dropdownmenu ul li ul li:hover ul li,
+#dropdownmenu ul li ul li.over ul li,
+#dropdownmenu ul li ul li:hover ul li a,
+#dropdownmenu ul li ul li.over ul li a
+{
+	display:block;
+	z-index: 700;
+}
+/* For IE7 and Safari Fix of hide/show behavior z-index problem */
+
+
+
+
+/* Fix IE. Hide from IE Mac \
+* html ul li { float: left; height: 1%; }
+* html ul li a { height: 1%; }
+/* End */
+
+
+
+/* For IE6 Fix - I don't remember what it fixes.. It seems it is no longer needed. 
+#dropdownmenu ul
+{
+	clear:right;
+	float: left;
+}*/
+/* For IE6 Fix */
+
+

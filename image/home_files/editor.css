@@ -1,0 +1,93 @@
+/*
+This is the editor style sheet,
+containing styles that will be used in the content editor tools.
+Customized for each project.
+*/
+
+/* Same as title_subtitle except without padding left */
+.subtitle
+{
+    padding:5px 0px 0px 0px;
+    margin:0px 0px 10px 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:14px;
+	line-height:20px;
+	font-weight: normal;
+	color: #01639b;
+}
+
+table.tableData
+{
+	width: 95%;
+	border:1px solid #001c3e !important;
+	background-color:#fbfdff;
+	border-collapse:separate;
+}
+
+.tableData td
+{
+	border:0;
+	border-top:1px solid #c3bfa7;
+	padding:4px;
+	margin:0;
+	color: #000;
+}
+
+.tableData th, .tableDataHdr
+{
+	padding: 4px;
+	font-size: 10px;
+	font-weight: bold;
+	text-align:left;
+	color: #daebf5;
+	background-color: #001c3e;
+	text-transform:uppercase;
+}
+
+.tableDataHdr a, 
+.tableData th a
+{
+	color: #ffffff;
+}
+
+.tableBox
+{
+	border: 1px solid #001c3e;
+	font-size: 11px;
+	background: #fbfdff;
+	color: #000000;
+	padding:3px;
+}
+
+.sidebar
+{
+	background:#e9eff7 url(_gfx/int/sidebar_bg.gif) bottom repeat-x;
+	float:right;
+	width:180px; margin:10px 0 10px 10px;
+	padding:10px 10px 40px 10px;
+	border-top:5px solid #05264c;
+}
+
+*html .sidebar {width:200px;}
+
+/*
+Inherit stock styles
+*/
+
+body,td,th,p,select,li,ul,input,blockquote,textarea
+{
+	font-family: Verdana, Arial, Sans-Serif;
+	font-size: 11px;
+	line-height: 16px;
+	color: #333;
+}
+
+a
+{
+	color:#CC0000;
+}
+
+a:hover
+{ 
+    text-decoration:none; 
+}
